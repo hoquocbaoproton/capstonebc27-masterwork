@@ -1,0 +1,174 @@
+/* SERVICES */
+.services-section .header-section h3 {
+  font-weight: 800;
+}
+
+.services-section .services-section__content h5 {
+  line-height: 30px;
+  color: #999;
+  font-weight: 400;
+}
+
+.services-section .services-section__content h3 {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.services-section .services-section__content .services-section__products {
+  padding: 0 30px;
+}
+
+.services-section
+  .services-section__content
+  .services-section__products
+  .body-1 {
+  font-weight: 400;
+}
+
+.services-section .services-section__content .services-section__products .icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: var(--light-bg-color);
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  box-shadow: var(--card-box-shadow);
+}
+.services-section .services-section__content .services-section__products .icon {
+  vertical-align: middle;
+  border-style: none;
+}
+.services-section .services-section__content .services-section__products h4 a {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--title-color);
+  line-height: 24.5px;
+}
+.services-section
+  .services-section__content
+  .services-section__products
+  h4
+  a:hover {
+  color: var(--primary);
+}
+
+/* BEST PRODUCT */
+.best-product-section .best-product-container {
+  background-color: var(--light-bg-color);
+}
+
+.best-product-section .header-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.best-product-section .header-section h3 {
+  line-height: 1;
+}
+
+.best-product-section .header-section .title {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.best-product-section .content-section {
+  align-items: center;
+}
+.best-product-section
+  .content-section
+  .content__right-grids
+  .content__right-icon
+  .content__icon
+  span {
+  font-size: 20px;
+  color: var(--primary);
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 50%;
+  font-weight: 700;
+  box-shadow: var(--card-hover-box-shadow);
+}
+
+.best-product-section
+  .content-section
+  .content__right-grids
+  .content__right-info
+  a {
+  font-size: 18px;
+  color: var(--title-color);
+  margin-bottom: 5px;
+  display: inline-block;
+  transition: all 0.3s ease-in 0s;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.best-product-section .content-section .content__text {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* FEATURE SERVICES */
+.feature-services-section .feature-services-container {
+}
+
+.feature-services-section .header-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.feature-services-section .header-section h3 {
+  line-height: 1;
+}
+
+.feature-services-section .header-section .title {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.feature-services-section .content-section .content-left {
+  border: 1px solid rgb(238, 238, 238);
+  padding: 2rem;
+  border-radius: var(--card-curve);
+}
+
+.feature-services-section
+  .content-section
+  .content-left
+  .content-services__title {
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.feature-services-section .content-section .content-left p,
+.feature-services-section .content-section .content-right p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  color: var(--text-color);
+}
+
+.feature-services-section .content-section .content-left .feature-list li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--title-color);
+  margin: 16px 0px;
+  font-weight: 500;
+}
