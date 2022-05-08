@@ -1,3 +1,4 @@
+/* Color */
 :root {
     --primary: #dc4f72;
     --secondary: #0d5fa8;
@@ -61,9 +62,6 @@ li {
 }
 
 /* Typography */
-.font-secondary {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 a {
     font-size: 16px;
     line-height: 24px;
@@ -223,7 +221,7 @@ h6 {
         padding-right: 24px;
     }
 }
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
     .container {
         padding-left: 24px;
         padding-right: 24px;
@@ -274,40 +272,12 @@ header {
     align-items: center;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
-header .fixed-top{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-header .nav-fixed{
-    padding: 0px;
-    background-color: #fff;
-    height: 70px;
-    border-bottom: none;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-}
-header .navbar{
-    color: var(--text-color);
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-}
 header .navbar-brand {
-    margin: 0;
-    padding: 0;
     font-size: 26px;
     font-weight: 700;
     text-transform: capitalize;
     color: var(--primary);
     letter-spacing: -1px;
-}
-header .nav-fixed .navbar-expand-lg .navbar-brand{
-    color: var(--primary);
 }
 header .nav-item {
     padding: 0 15px;
@@ -365,7 +335,7 @@ header .dropdown-menu:before {
     left: 49%;
     z-index: 1001;
 }
-header .nav-item button {
+header .nav-item button{
     transition: 0.3s ease-out;
     display: inline-block;
     line-height: 52px;
@@ -377,39 +347,11 @@ header .nav-item button {
     color: var(--primary);
     border-color: var(--primary);
 }
-header .nav-item button:hover {
+header .nav-item button:hover{
     background-color: var(--primary);
     color: #ffffff;
 }
 
-header .navbar-toggler{
-    display: block;
-    padding: 0;
-}
-header .navbar-toggler span{
-    color: #fff;
-    line-height: 34px;
-    background-color: var(--primary);
-    border-radius: 5px;
-}
-/* breadcrums style*/
-#breadcrumbs {
-    padding: 15px 20px;
-    background: var(--light-bg-color);
-}
-.breadcrumbs {
-    margin-top: 90px;
-    padding: 20px 0;
-}
-#breadcrumbs a {
-    color: var(--primary);
-    margin: 0 5px 0 0;
-    font-size: 14px;
-}
-.breadcrumb_last {
-    color: var(--title-color);
-    font-size: 14px;
-}
 /* Footer style*/
 footer {
     
@@ -462,4 +404,3 @@ footer .footer .copyright .social i {
 footer .footer .copyright .social i:hover {
     color: var(--primary);
 }
-
