@@ -36,6 +36,10 @@ section {
     margin-right: -15px;
     margin-left: -15px;
 }
+/* header */
+.admin {
+    color: var(--primary);
+}
 /* about A */
 .aboutA .cwp4-text {
     align-self: center;
