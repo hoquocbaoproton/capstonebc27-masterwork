@@ -1,0 +1,162 @@
+img.img-curve {
+  border-radius: var(--card-curve);
+  transition: 0.3s ease-in-out;
+}
+
+img.img-curve:hover {
+  transform: var(--transformY);
+  transition: 0.3s ease-in-out;
+}
+
+.contacts-container .contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--card-curve);
+  box-shadow: var(--card-hover-box-shadow);
+  position: relative;
+  left: -75px;
+}
+
+.contacts-container .contact-form .header-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contacts-container .contact-form .header-section p {
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  max-width: 750px;
+}
+.contacts-container .contact-form .form-input > * {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contacts-container input.contact-input,
+.contacts-container textarea {
+  outline: none;
+  padding: 15px 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  border-radius: var(--card-curve);
+  border: 1px solid #eee;
+  background: var(--light-bg-color);
+}
+
+/* HELP */
+
+.help-container {
+  background-color: var(--light-bg-color);
+}
+.help-container .header-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.help-container .header-section .title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.help-container .header-section p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.help-container .contact-help {
+  grid-template-columns: 1fr;
+}
+
+.help-container .contact-help > * {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.help-container .contact-help .contact-info-left {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.contact-info-left .contact-info {
+  box-shadow: var(--card-box-shadow);
+  padding: 2rem;
+  background: #fff;
+  border-radius: var(--card-curve);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-gap: 20px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.contact-info-left .contact-info:hover {
+  box-shadow: var(--card-hover-box-shadow);
+  transform: var(--transformY);
+  transition: 0.3s ease-in-out;
+}
+
+.contact-info .icon {
+  width: 60px;
+  margin: 0 auto;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 60px;
+  background: rgba(220, 79, 114, 0.1);
+}
+
+.contact-info .icon span {
+  font-size: 20px;
+  color: var(--primary);
+  line-height: 60px;
+}
+
+.contact-info .contact-details h6 {
+  font-size: 20px;
+  color: var(--title-color);
+  margin: 0px 0 10px 0;
+  font-weight: 700;
+}
+
+.contact-info .contact-details p {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.contact-info .contact-details a {
+  display: block;
+  color: var(--text-color);
+  transition: 0.3s ease-in;
+}
+.contact-info .contact-details a:hover {
+  display: block;
+  color: var(--primary);
+  text-decoration: underline;
+  transition: 0.3s ease-in;
+}
+
+/* MAP */
+.map iframe {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
