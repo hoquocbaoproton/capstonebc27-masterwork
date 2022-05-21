@@ -1,9 +1,6 @@
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-img:hover{
-    border-radius: var(--card-curve);
+
+.imgTST:hover{
+    transform: var(--transformY);
     transition: 0.3s ease-in-out;
 }
 .fixed-mw {
@@ -113,14 +110,13 @@ img:hover{
 }
 .posts-view {
     display: grid;
-    
     grid-gap: 4%;
     align-items: center;
 }
-.posts-view-left{
+a.posts-view-left{
     grid-template-columns: 23% 72%;
 }
-.posts-view-right{
+a.posts-view-right{
      grid-template-columns: 72% 23%;
 }
 .posts-view img {
@@ -192,9 +188,9 @@ img:hover{
     margin-bottom: 20px;
     font-weight: 600;
 }
-.related_posts .grid-column {
-    transition: 0.3s ease-in;
-    border-radius: var(--card-curve);
+.related_posts .grid-column:hover {
+    transform: var(--transformY);
+    transition: 0.3s ease-in-out;
 }
 .related_posts .grid-column .card-style {
     border-radius: 0;
@@ -216,6 +212,9 @@ img:hover{
     display: inline-block;
     font-weight: 700;
     line-height: 1.2;
+}
+.related_posts .card-body .card-grid h4:hover {
+    color: var(--text-color);
 }
 .related_posts .card-body .card-title {
     margin-bottom: 0.75rem;
@@ -247,11 +246,9 @@ img:hover{
     border-width: 1px;
     border-style: solid;
     border-color: var(--text-color);
-    -o-border-image: initial;
     border-image: initial;
     outline: none;
     padding: 15px 20px;
-    -webkit-appearance: none;
     color: #000;
     font-weight: 600;
     width: 100%;
@@ -271,4 +268,14 @@ img:hover{
     outline: none;
     width: 20%;
     border: none;
+}
+.btn {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    a.posts-view-left a.posts-view-right{
+        grid-template-columns: 100%;
+        grid-gap: 0%;
+    }
 }
