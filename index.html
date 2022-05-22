@@ -591,8 +591,8 @@
       <div class="testimonials-container py-5">
         <div class="container py-lg-3">
           <div class="header-section text-center mx-auto">
-            <h6 class="title body-1">We are here for you</h6>
-            <h3>Explore Solutions</h3>
+            <h6 class="title body-1">OUR CLIENTS TESTIMONIALS</h6>
+            <h3>What People Say</h3>
             <p class="my-3 body-1">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
@@ -876,7 +876,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script>
+    <!-- <script>
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 16,
@@ -891,6 +891,39 @@
             items: 2,
           },
         },
+      });
+    </script> -->
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-two").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: false,
+            },
+            1000: {
+              items: 2,
+              nav: false,
+            },
+          },
+        });
       });
     </script>
   </body>
