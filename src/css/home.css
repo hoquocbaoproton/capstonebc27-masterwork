@@ -523,7 +523,7 @@
       rgba(247, 249, 252, 0.77),
       rgba(247, 249, 252, 0.77)
     ),
-    url(../assets/img/1.Home/b2.jpeg);
+    url(/src/assets/img/home/b2.jpeg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
