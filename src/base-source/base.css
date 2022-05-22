@@ -306,39 +306,25 @@ header {
     color: var(--primary);
 }
 /* ---------------------------- */
-.navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-}
-/* header .navbar-toggler span{
-    color: #fff;
-    line-height: 34px;
-    background-color: var(--primary);
-    border-radius: 5px;
-} */
-.navbar-toggler-icon {
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    content: "";
-    background: no-repeat center center;
-    background-size: 100% 100%;
-}
 button.navbar-toggler.collapsed .icon-expand {
     display: block;
-}
-button.navbar-toggler .icon-expand {
-    display: none;
 }
 button.navbar-toggler.collapsed .icon-close {
     display: none;
 }
 button.navbar-toggler .icon-expand {
+    display: none;
+}
+
+button.navbar-toggler .icon-close {
     display: block;
+}
+.navbar-toggler-icon.fa {
+    line-height: 1.2em;
+    color: #fff;
+    line-height: 34px;
+    background-color: var(--primary);
+    border-radius: 5px;
 }
 /* ---------------------------- */
 .navbar-expand-lg .navbar-nav .nav-item{
@@ -372,6 +358,9 @@ a.dropdown-item {
     font-size: 14px;
     padding-left: 2px;
     /* font-weight: 40; */
+}
+.navbar-toggler {
+    padding: 0;
 }
 .navbar-nav .dropdown-menu {
     position: static;
