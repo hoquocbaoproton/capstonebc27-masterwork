@@ -257,11 +257,12 @@ iframe { border: none;}
 .team .team-info {
     transition: 0.3s ease-in-out;
 }
-.team .img-circle img{
+.team .img-circle {
     width: 100%;
     height: 250px;
     display: inline-block;
     overflow: hidden;
+    
     background: #f3f6f9;
 }
 .team .img-circle a {
@@ -273,6 +274,7 @@ iframe { border: none;}
 .team .column a img {
     display: block;
     border-radius: 6px 6px 0 0;
+    object-fit: cover;
 }
 .team .column-btm {
     padding: 16px;
@@ -319,17 +321,17 @@ iframe { border: none;}
     color: #ffffff;
 }
 /* customer */
-.owl-carousel {
-    display: block;
-    width: 100%;
-    z-index: 1;
-}
-.owl-carousel .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-}
 
+.customers .logo-view img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: 0.3s ease;
+    padding: 1.5rem 2rem; }
+  
+  .customers .logo-view img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: 0.3s ease; }
 /* CTA */ 
 .cta-section .title h3 {
   line-height: 1;
