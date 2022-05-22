@@ -36,6 +36,10 @@ section {
     margin-right: -15px;
     margin-left: -15px;
 }
+.imgTST:hover {
+    transform: var(--transformY);
+    transition: 0.3s ease-in-out;
+}
 /* header */
 .admin {
     color: var(--primary);
@@ -85,10 +89,7 @@ section {
     border-radius: 5px;
     height: auto;
 }
-.aboutA .content .row img:hover {
-    transform: var(--transformY);
-    transition: 0.3s ease-in-out;
-}
+ 
 /* about B */
 .aboutB p{
     font-size: 16px;
@@ -103,22 +104,21 @@ section {
     font-weight: 700;
 }
 /* features */
-.features .content .card {
+.features .content .thumb {
     background: #fff;
     border-radius: var(--card-curve);
     box-shadow: var(--card-box-shadow);
 }
-.features .card .content-card {
+.features .thumb .content-card {
     width: 100%;
     height: 250px;
     margin: 0px 0;
     text-align: center;
     transition: all 0.3s ease;
-    padding: 0 30px;
+    padding: 0 25px;
 }
 .features .content-card .icon {
-    position: relative;
-    top: 60px;
+    transform: translate(0, 60px);
     display: inline-block;
     margin-bottom: 68px;
     width: 70px;
@@ -133,21 +133,45 @@ section {
 .features .icon .service-icon {
     line-height: 70px;
 }
-.features .content h4{
-    position: relative;
-    top: 10px;
+.features .content-card .mission {
+    transform: translate(0, 10px);
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
     color: var(--title-color);
 }
-.features .description {
-    margin: -6em auto 0;
+.features .content-card:hover .icon {
+    transform: translate(0, -35px);
+}
+.features .content-card:hover .mission {
+    transform: translate(0, -90px);
+}
+.features .content-card .description {
     opacity: 0;
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: scale(0);
+    margin: -6em auto 0;
+    visibility: hidden;
 }
+.features .content-card:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
+.features .content-card .description p {
+    color: var(--title-color);
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.features .content-card .description a {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
 /* solution */
 .solution {
     background-color: #ffffff;
@@ -180,7 +204,7 @@ section {
     text-decoration: none;
     background-color: transparent;
 }
-.media .video-play span {
+.media span.video-play {
     background: #fff;
     display: inline-block;
     width: 55px;
@@ -188,14 +212,19 @@ section {
     line-height: 55px;
     border-radius: 50%;
     transition: 0.3s ease-in-out;
-    -webkit-animation: ripple 1s linear infinite;
     animation: ripple 1s linear infinite;
 }
-#video {
+#playVideo {
     max-width: 750px;
     margin: 40px auto;
     position: relative;
 }
+#playVideo iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+iframe { border: none;}
 .mfp-hide {
     display: none !important;
 }
@@ -214,6 +243,16 @@ section {
     background-color: #dc4f72;
     border-color: #dc4f72;
 }
+/* customers */
+.customers .logo img{
+    width: 100%;
+    display: block;
+    filter: grayscale(1);
+    transition: 0.3s ease;
+}
+.customers .logo img:hover {
+    filter: grayscale(0) contrast(100%);
+}
 /* team */
 .team .team-info {
     transition: 0.3s ease-in-out;
@@ -223,6 +262,7 @@ section {
     height: 250px;
     display: inline-block;
     overflow: hidden;
+    
     background: #f3f6f9;
 }
 .team .img-circle a {
@@ -234,6 +274,7 @@ section {
 .team .column a img {
     display: block;
     border-radius: 6px 6px 0 0;
+    object-fit: cover;
 }
 .team .column-btm {
     padding: 16px;
@@ -243,13 +284,19 @@ section {
     border-top: none;
     margin-top: -6px;
 }
-.team h3.name-pos a {
+.team h3.name-pos a{
     font-size: 22px;
     line-height: 26px;
     color: var(--title-color);
     font-weight: 700;
 }
-
+.team .team-info:hover {
+    transform: var(--transformY);
+    transition: 0.3s ease-in-out;
+}
+.team .team-info:hover h3{
+    color: var(--primary);
+}
 .team .team-info p {
     font-size: 16px;
     line-height: 24px;
@@ -273,6 +320,18 @@ section {
     background: #1da1f2;
     color: #ffffff;
 }
+/* customer */
+
+.customers .logo-view img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: 0.3s ease;
+    padding: 1.5rem 2rem; }
+  
+  .customers .logo-view img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: 0.3s ease; }
 /* CTA */ 
 .cta-section .title h3 {
   line-height: 1;

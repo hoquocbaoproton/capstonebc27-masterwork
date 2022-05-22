@@ -265,7 +265,7 @@ h6 {
 }
 
 /* Header style */
-header {
+#site-header {
     background-color: #fff;
     padding: 0px;
     transition: all 0.4s ease 0s;

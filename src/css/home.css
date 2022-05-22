@@ -7,7 +7,7 @@
   overflow: hidden;
   background: #ffffff;
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
-    url(../assets/img/1.Home/banner.jpeg);
+    url(../assets/img/home/banner.jpeg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -128,7 +128,7 @@
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.33)
     ),
-    url("../assets/img/1.Home/bg.jpeg");
+    url("../assets/img/home/bg.jpeg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -523,7 +523,7 @@
       rgba(247, 249, 252, 0.77),
       rgba(247, 249, 252, 0.77)
     ),
-    url(../assets/img/1.Home/b2.jpeg);
+    url(/src/assets/img/home/b2.jpeg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -593,6 +593,13 @@
   object-position: center;
 }
 
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: transparent;
+  padding: 0;
+}
+
 .owl-theme .owl-dots .owl-dot span {
   width: 40px;
   height: 5px;
@@ -604,6 +611,8 @@
   border-radius: 0;
   position: relative;
 }
+
+
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
