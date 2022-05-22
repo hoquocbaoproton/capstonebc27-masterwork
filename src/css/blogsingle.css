@@ -269,9 +269,7 @@ a.posts-view-right{
     width: 20%;
     border: none;
 }
-.btn {
-    text-transform: uppercase;
-}
+
 
 @media (max-width: 768px) {
     a.posts-view-left a.posts-view-right{
