@@ -42,11 +42,87 @@
     />
 
     <!-- Base -->
-    <link rel="stylesheet" href="../../web/0-BaseSource/base.css" />
+    <link rel="stylesheet" href="./src/base-source/base.css" />
     <!-- Style -->
-    <link rel="stylesheet" href="../../web/3-Services/style.css" />
+    <link rel="stylesheet" href="./src/css/services.css" />
   </head>
   <body>
+    <!-- header -->
+    <header id="site-header" class="fixed-top nav-fixed">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stoke">
+          <a class="navbar-brand" href="#">
+            <i class="fa-regular fa-handshake"></i>
+            <span> Masterwork </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="navbar-collapse collapse show" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item drogdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                  <span class="fa-solid fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="blogpost.html">Blog posts</a>
+                  <a class="dropdown-item" href="blogsingle.html"
+                    >Blog single</a
+                  >
+                  <a class="dropdown-item" href="landingpage.html"
+                    >Landing page</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item justify-content-start">
+                <button class="btn btn-outline-danger theme-btn" type="button">
+                  SCHEDULE A DEMO
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- breadcrumbs -->
+    <div id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <a href="index.html"> Home </a> »
+        <span class="breadcrumb_last" aria-current="page">About</span>
+      </div>
+    </div>
+    <div style="margin: 8px auto; display: block; text-align: center">
+      <!---728x90--->
+    </div>
+
     <!-- OUR SERVICES -->
     <section class="services-section py-5">
       <div class="container py-lg-3">
@@ -75,7 +151,7 @@
               <div class="col-6 services-section__products">
                 <a href="#url" class="icon"
                   ><img
-                    src="../../web/assets/img/3.Services/service-icon1.png"
+                    src="./src/assets/img/services/service-icon1.png"
                     alt=""
                 /></a>
                 <h4>
@@ -90,7 +166,7 @@
               <div class="col-6 services-section__products">
                 <a href="#url" class="icon"
                   ><img
-                    src="../../web/assets/img/3.Services/service-icon2.png"
+                    src="./src/assets/img/services/service-icon2.png"
                     alt=""
                 /></a>
                 <h4>
@@ -103,7 +179,7 @@
               <div class="col-6 services-section__products mt-5 pt-lg-3">
                 <a href="#url" class="icon"
                   ><img
-                    src="../../web/assets/img/3.Services/service-icon3.png"
+                    src="./src/assets/img/services/service-icon3.png"
                     alt=""
                 /></a>
                 <h4>
@@ -118,7 +194,7 @@
               <div class="col-6 services-section__products mt-5 pt-lg-3">
                 <a href="#url" class="icon"
                   ><img
-                    src="../../web/assets/img/3.Services/service-icon4.png"
+                    src="./src/assets/img/services/service-icon4.png"
                     alt=""
                 /></a>
                 <h4>
@@ -202,8 +278,8 @@
             </div>
             <div class="col-lg-4 content__left-container">
               <img
-                src="../../web/assets/img/3.Services/service-circle.jpg"
-                class="img-curve rounded-circle service-img img-fluid"
+                src="./src/assets/img/services/service-circle.jpg"
+                class="img-curve rounded-circle service-img img-fluid service-img"
                 alt=""
               />
             </div>
@@ -307,8 +383,8 @@
                   >Know more</a
                 >
                 <img
-                  src="../../web/assets/img/3.Services/b1.jpg"
-                  class="img-fluid img-curve"
+                  src="./src/assets/img/services/b1.jpg"
+                  class="img-fluid img-circle img-curve"
                   alt=""
                 />
               </div>
@@ -316,7 +392,7 @@
             <div class="col-lg-6 mt-lg-0 mt-5">
               <div class="content-right">
                 <img
-                  src="../../web/assets/img/3.Services/b1.jpg"
+                  src="./src/assets/img/services/b1.jpg"
                   class="img-fluid img-curve"
                   alt=""
                 />
@@ -358,31 +434,31 @@
                 <div class="col-md-4">
                   <h6 class="mb-4">Company</h6>
                   <div>
-                    <a href="" class="d-block my-2"> Home </a>
-                    <a href="" class="d-block my-2"> About Us </a>
-                    <a href="" class="d-block my-2"> Services </a>
-                    <a href="" class="d-block my-2"> Blog </a>
-                    <a href="" class="d-block my-2"> Contact Us </a>
+                    <a href="index.html" class="d-block my-2"> Home </a>
+                    <a href="about.html" class="d-block my-2"> About Us </a>
+                    <a href="services.html" class="d-block my-2"> Services </a>
+                    <a href="blogpost.html" class="d-block my-2"> Blog </a>
+                    <a href="contact.html" class="d-block my-2"> Contact Us </a>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <h6 class="mb-4">Useful Links</h6>
                   <div>
-                    <a href="" class="d-block my-2"> Case Studies </a>
-                    <a href="" class="d-block my-2"> Our Branches </a>
-                    <a href="" class="d-block my-2"> Latest Media </a>
-                    <a href="" class="d-block my-2"> About Company </a>
-                    <a href="" class="d-block my-2"> Our People </a>
+                    <a href="#url" class="d-block my-2"> Case Studies </a>
+                    <a href="#url" class="d-block my-2"> Our Branches </a>
+                    <a href="#url" class="d-block my-2"> Latest Media </a>
+                    <a href="#url" class="d-block my-2"> About Company </a>
+                    <a href="#url" class="d-block my-2"> Our People </a>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <h6 class="mb-4">Our Services</h6>
                   <div>
-                    <a href="" class="d-block my-2"> Privacy Policy </a>
-                    <a href="" class="d-block my-2"> Our Terms </a>
-                    <a href="" class="d-block my-2"> Services </a>
-                    <a href="" class="d-block my-2"> Landing Page </a>
-                    <a href="" class="d-block my-2"> Our People </a>
+                    <a href="#url" class="d-block my-2"> Privacy Policy </a>
+                    <a href="#url" class="d-block my-2"> Our Terms </a>
+                    <a href="#url" class="d-block my-2"> Services </a>
+                    <a href="#url" class="d-block my-2"> Landing Page </a>
+                    <a href="#url" class="d-block my-2"> Our People </a>
                   </div>
                 </div>
               </div>
@@ -419,7 +495,7 @@
             <div class="text-lg-start text-center">
               <p class="body-1">
                 © 2020 Masterwork. All rights reserved | Designed by
-                <a href="">W3Layouts</a>
+                <a href="#url">W3Layouts</a>
               </p>
             </div>
             <div class="mt-lg-0 mt-3">
@@ -467,5 +543,40 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--/MENU-JS-->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <!--//MENU-JS-->
   </body>
 </html>
