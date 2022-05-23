@@ -52,7 +52,7 @@
         <nav class="navbar navbar-expand-lg stoke">
           <a class="navbar-brand" href="#">
             <i class="fa-regular fa-handshake"></i>
-            Masterwork
+            <span> Masterwork </span>
           </a>
 
           <button
@@ -68,15 +68,15 @@
           <div class="navbar-collapse collapse show" id="collapsibleNavbar">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#"> Home </a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> About </a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Services </a>
+                <a class="nav-link" href="#">Services</a>
               </li>
-              <li class="nav-item drogdown admin">
+              <li class="nav-item drogdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -89,16 +89,16 @@
                   <span class="fa-solid fa-angle-down"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#"> Blog posts </a>
-                  <a class="dropdown-item admin" href="#"> Blog single </a>
-                  <a class="dropdown-item" href="#"> Landing page </a>
+                  <a class="dropdown-item" href="#">Blog posts</a>
+                  <a class="dropdown-item" href="#">Blog single</a>
+                  <a class="dropdown-item" href="#">Landing page</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Contact </a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item justify-content-start">
-                <button class="btn btn-outline-danger" type="button">
+                <button class="btn btn-outline-danger theme-btn" type="button">
                   SCHEDULE A DEMO
                 </button>
               </li>
@@ -107,14 +107,15 @@
         </nav>
       </div>
     </header>
-
     <!-- breadcrumbs -->
     <div id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-        <a href="index.html"> Home </a>
-        »
-        <span class="breadcrumb_last" aria-current="page"> Single Post </span>
+        <a href="index.html"> Home </a> »
+        <span class="breadcrumb_last" aria-current="page">About</span>
       </div>
+    </div>
+    <div style="margin: 8px auto; display: block; text-align: center">
+      <!---728x90--->
     </div>
 
     <!-- blog -->
@@ -673,5 +674,40 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--/MENU-JS-->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <!--//MENU-JS-->
   </body>
 </html>
