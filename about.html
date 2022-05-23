@@ -63,6 +63,7 @@
   </head>
   <body>
     <!-- header -->
+    <!-- header -->
     <header id="site-header" class="fixed-top nav-fixed">
       <div class="container">
         <nav class="navbar navbar-expand-lg stoke">
@@ -86,7 +87,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item admin">
+              <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
@@ -114,7 +115,7 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item justify-content-start">
-                <button class="btn btn-outline-danger" type="button">
+                <button class="btn btn-outline-danger theme-btn" type="button">
                   SCHEDULE A DEMO
                 </button>
               </li>
@@ -123,14 +124,15 @@
         </nav>
       </div>
     </header>
-
     <!-- breadcrumbs -->
     <div id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-        <a href="index.html"> Home </a>
-        »
+        <a href="index.html"> Home </a> »
         <span class="breadcrumb_last" aria-current="page">About</span>
       </div>
+    </div>
+    <div style="margin: 8px auto; display: block; text-align: center">
+      <!---728x90--->
     </div>
 
     <!-- about A -->
@@ -869,5 +871,34 @@
         });
       });
     </script>
+
+    <!--/MENU-JS-->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <!--//MENU-JS-->
   </body>
 </html>
