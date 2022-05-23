@@ -270,7 +270,8 @@ a.posts-view-right {
 }
 
 @media (max-width: 768px) {
-  a.posts-view-left a.posts-view-right {
+  a.posts-view-left,
+  a.posts-view-right {
     grid-template-columns: 100%;
     grid-gap: 0%;
   }
