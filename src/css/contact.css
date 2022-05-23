@@ -8,6 +8,20 @@ img.img-curve:hover {
   transition: 0.3s ease-in-out;
 }
 
+@media (max-width: 684px) {
+.contacts-container .contact-form {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+}
+
+@media (max-width: 991px) {
+.contacts-container .contact-form {
+    left: 0;
+    top: -20px;
+}
+}
+
 .contacts-container .contact-form {
   background: #fff;
   padding: 2rem;
