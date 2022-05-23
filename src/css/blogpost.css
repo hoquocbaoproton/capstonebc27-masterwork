@@ -394,3 +394,15 @@ button.owl-prev {
   box-shadow: var(--card-hover-box-shadow);
   transition: 0.3s ease-in-out;
 }
+
+@media (max-width: 991px) {
+  .blog-section .blog-wrapper .item-info {
+    grid-template-columns: 100%;
+  }
+  .blog-section .blog-wrapper .item-info a.item-link,
+  .blog-section .blog-wrapper .item-info a.item-link img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+  }
+}

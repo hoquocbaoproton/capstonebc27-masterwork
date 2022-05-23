@@ -224,6 +224,13 @@ img.img-curve:hover {
   font-weight: 400;
   color: var(--text-color);
 }
+
+@media only screen and (max-width: 992px) {
+  .best-product-section .content__left-container {
+    width: 300px;
+    margin: 20px auto 40px;
+  }
+}
 /* EXPLORE SOLUTION */
 .solutions .header-section {
   max-width: 750px;
@@ -944,4 +951,31 @@ img.img-curve:hover {
   min-height: 480px;
   align-items: center;
   padding: 32px 0;
+}
+
+/*  responsive */
+
+@media screen and (max-width: 991px) {
+  .contacts-container .contact-form {
+    left: 0;
+    top: -20px;
+  }
+  .contacts-container .contact-info-left {
+    grid-template-columns: 1fr;
+  }
+  .contact-help .contact-info-left {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .help-container .contact-help .contact-info-left {
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .help-container .contact-help .contact-info-left {
+    grid-template-columns: 1fr;
+  }
 }

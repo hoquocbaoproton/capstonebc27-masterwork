@@ -266,8 +266,15 @@ h6 {
 
 /* Header style */
 
-
-
+header {
+	background-color: #fff;
+	padding: 0px;
+	transition: all 0.4s ease 0s;
+	height: 90px;
+	display: grid;
+	align-items: center;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
 
 .navbar {
 padding: 0; }
@@ -600,15 +607,15 @@ header.nav-fixed {
 				display: none;
 			}
 
-			header {
-				background-color: #fff;
-				padding: 0px;
-				transition: all 0.4s ease 0s;
-				height: 90px;
-				display: grid;
-				align-items: center;
-				box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-			}
+@media only screen and (max-width: 991px) {
+	.navbar-expand-lg .navbar-nav .dropdown-menu {
+		transform: translateX(0px);
+	}
+	.navbar-nav .dropdown-menu {
+		text-align: center;
+		width: 100%;
+		}
+	}
 
 
 /* breadcrums style*/

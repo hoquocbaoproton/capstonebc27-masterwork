@@ -16,21 +16,6 @@ img.img-curve:hover {
   position: relative;
   left: -75px;
 }
-@media (max-width: 991px) {
-  .contacts-container .contact-form {
-      left: 0;
-      top: -20px;
-  }
-  }
-
-@media (max-width: 684px) {
-  .contacts-container .contact-form {
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-  }
-  }
-  
-
 
 .contacts-container .contact-form .header-section {
   max-width: 750px;
@@ -174,4 +159,31 @@ img.img-curve:hover {
   width: 100%;
   height: 400px;
   display: block;
+}
+
+/*  responsive */
+
+@media screen and (max-width: 991px) {
+  .contacts-container .contact-form {
+    left: 0;
+    top: -20px;
+  }
+  .contacts-container .contact-info-left {
+    grid-template-columns: 1fr;
+  }
+  .contact-help .contact-info-left {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .help-container .contact-help .contact-info-left {
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .help-container .contact-help .contact-info-left {
+    grid-template-columns: 1fr;
+  }
 }
